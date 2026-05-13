@@ -1,5 +1,5 @@
 from groq import Groq
-from semantic_kernel import kernel_function
+from semantic_kernel.functions import kernel_function
 from config import GROQ_API_KEY,GROQ_MODEL
 class InsightPlugin:
     def __init__(self):
