@@ -11,3 +11,5 @@ chromadb
 sentence-transformers
 pandas
 semantic-kernel
+langgraph
+semantic-kernel
