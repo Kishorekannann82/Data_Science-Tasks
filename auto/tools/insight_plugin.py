@@ -4,7 +4,6 @@ from config import GROQ_API_KEY,GROQ_MODEL
 class InsightPlugin:
     def __init__(self):
         self.client=Groq(api_key=GROQ_API_KEY)
-
     @kernel_function(
         name="generate_insights",
         description="Generate the useful business or data insights from a CSV analysis summary"

@@ -2,18 +2,13 @@ import json
 import os
 from datetime import datetime
 from semantic_kernel.functions import kernel_function
-
-
 class MemoryPlugin:
     def __init__(self, memory_file: str = "memory/memory.json"):
         self.memory_file = memory_file
-
         os.makedirs(os.path.dirname(self.memory_file), exist_ok=True)
-
         if not os.path.exists(self.memory_file):
             with open(self.memory_file, "w") as file:
                 json.dump([], file)
-
     @kernel_function(
         name="save_memory",
         description="Save task, summary, insights, and email draft into memory"
@@ -29,9 +24,7 @@ class MemoryPlugin:
             "insights": insights,
             "email_draft": email_draft
         }
-
         memory_data.append(new_record)
-
         with open(self.memory_file, "w") as file:
             json.dump(memory_data, file, indent=4)
 

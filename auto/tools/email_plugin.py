@@ -5,7 +5,6 @@ from config import GROQ_API_KEY,GROQ_MODEL
 class EmailPlugin:
     def __init__(self):
         self.client=Groq(api_key=GROQ_API_KEY)
-
     @kernel_function(
         name="create_email_draft",
         description="Create a professional email draft from data summary and insights"
