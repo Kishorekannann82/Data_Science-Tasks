@@ -10,3 +10,4 @@ pypdf
 chromadb
 sentence-transformers
 pandas
+semantic-kernel
