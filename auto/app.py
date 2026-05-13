@@ -2,7 +2,7 @@ import os
 import streamlit as st 
 from agent import AutonomousTaskAgent
 st.set_page_config(
-    title="Autonomous CSV Insight Creator",
+    page_title="Autonomous CSV Insight Creator",
     layout="centered"
 )
 st.title("Autonomous CSV Insight and Email Generator")
@@ -17,7 +17,7 @@ if uploaded_file is not None:
     os.makedirs("uploads",exist_ok=True)
     file_path=os.path.join("uploads",uploaded_file.name)
     with open(file_path,"wb") as file:
-        file.write(uploaded_file.get_buffer())
+        file.write(uploaded_file.getbuffer())
     st.success(f"File uploaded Successfully:{uploaded_file.name}")
 if st.button("RUn Agent"):
     if uploaded_file is None:

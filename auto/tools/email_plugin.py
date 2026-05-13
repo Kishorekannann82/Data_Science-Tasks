@@ -1,5 +1,5 @@
 from groq import Groq
-from semantic_kernel.functions import kernel_funcion
+from semantic_kernel.functions import kernel_function
 from config import GROQ_API_KEY,GROQ_MODEL
 
 class EmailPlugin:
@@ -7,10 +7,10 @@ class EmailPlugin:
         self.client=Groq(api_key=GROQ_API_KEY)
 
     @kernel_function(
-        name-"create_email_draft",
+        name="create_email_draft",
         description="Create a professional email draft from data summary and insights"
     )
-    def create_emai_draft(self,insights:str)->str:
+    def create_email_draft(self,insights:str)->str:
         prompt = f""" 
 You are a professional assistant.
 

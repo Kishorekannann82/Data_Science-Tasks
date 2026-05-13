@@ -23,7 +23,7 @@ Give the output in this format:
 """ 
         response=self.client.chat.completions.create(
             model=GROQ_MODEL,
-            message=[
+            messages=[
                 {"role":"system","content":"You are a helful data analyst."},
                 {"role":"user","content":prompt}
             ],

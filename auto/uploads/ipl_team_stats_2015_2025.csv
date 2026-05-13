@@ -1,0 +1,97 @@
+season,team,matches_played,wins,losses,no_results,net_run_rate,points_table_position,total_runs_scored,total_wickets_taken,avg_score_batting_first,avg_score_chasing,playoff_result
+2015,Chennai Super Kings,14,9,5,0,0.709,1,2390,95,168,155,Runner-up
+2015,Mumbai Indians,14,8,6,0,-0.043,2,2250,92,160,158,Winner
+2015,Royal Challengers Bangalore,14,7,5,2,1.037,3,2400,88,175,162,Qualifier
+2015,Rajasthan Royals,14,7,5,2,0.062,4,2200,90,158,155,Qualifier
+2015,Kolkata Knight Riders,14,7,6,1,0.253,5,2280,91,163,157,Did not qualify
+2015,Sunrisers Hyderabad,14,7,7,0,-0.239,6,2150,93,155,152,Did not qualify
+2015,Delhi Daredevils,14,5,8,1,-0.049,7,2100,85,153,150,Did not qualify
+2015,Kings XI Punjab,14,3,11,0,-1.436,8,1950,78,145,140,Did not qualify
+2016,Gujarat Lions,14,9,5,0,-0.374,1,2320,90,160,155,Qualifier
+2016,Royal Challengers Bangalore,14,8,6,0,0.932,2,2580,88,185,170,Runner-up
+2016,Sunrisers Hyderabad,14,8,6,0,0.245,3,2250,96,158,155,Winner
+2016,Kolkata Knight Riders,14,8,6,0,0.106,4,2300,92,162,158,Qualifier
+2016,Mumbai Indians,14,7,7,0,-0.146,5,2200,89,157,155,Did not qualify
+2016,Delhi Daredevils,14,7,7,0,-0.155,6,2180,87,155,153,Did not qualify
+2016,Rising Pune Supergiants,14,5,9,0,0.015,7,2100,84,152,150,Did not qualify
+2016,Kings XI Punjab,14,4,10,0,-0.646,8,2050,80,148,145,Did not qualify
+2017,Mumbai Indians,14,10,4,0,0.784,1,2400,98,168,162,Winner
+2017,Rising Pune Supergiant,14,9,5,0,0.176,2,2320,94,163,158,Runner-up
+2017,Sunrisers Hyderabad,14,8,5,1,0.599,3,2280,96,162,156,Qualifier
+2017,Kolkata Knight Riders,14,8,6,0,0.641,4,2350,93,165,160,Qualifier
+2017,Kings XI Punjab,14,7,7,0,-0.009,5,2200,88,157,155,Did not qualify
+2017,Delhi Daredevils,14,6,8,0,-0.512,6,2100,84,152,148,Did not qualify
+2017,Gujarat Lions,14,4,10,0,-0.412,7,2050,80,148,145,Did not qualify
+2017,Royal Challengers Bangalore,14,3,10,1,-1.299,8,1950,76,145,140,Did not qualify
+2018,Sunrisers Hyderabad,14,9,5,0,0.284,1,2300,97,160,155,Runner-up
+2018,Chennai Super Kings,14,9,5,0,0.253,2,2350,94,165,158,Winner
+2018,Kolkata Knight Riders,14,8,6,0,-0.070,3,2280,91,162,156,Qualifier
+2018,Rajasthan Royals,14,7,7,0,-0.250,4,2200,87,157,153,Qualifier
+2018,Mumbai Indians,14,6,8,0,0.317,5,2250,90,163,155,Did not qualify
+2018,Royal Challengers Bangalore,14,6,8,0,0.129,6,2220,86,160,153,Did not qualify
+2018,Kings XI Punjab,14,6,8,0,-0.502,7,2150,84,155,150,Did not qualify
+2018,Delhi Daredevils,14,5,9,0,-0.222,8,2100,82,152,148,Did not qualify
+2019,Mumbai Indians,14,9,5,0,0.421,1,2380,96,165,160,Winner
+2019,Chennai Super Kings,14,9,5,0,0.131,2,2350,93,163,158,Runner-up
+2019,Delhi Capitals,14,9,5,0,0.044,3,2330,94,162,157,Qualifier
+2019,Sunrisers Hyderabad,14,6,8,0,0.577,4,2200,92,160,152,Qualifier
+2019,Kolkata Knight Riders,14,6,8,0,0.028,5,2220,88,158,155,Did not qualify
+2019,Kings XI Punjab,14,6,8,0,-0.251,6,2180,85,156,152,Did not qualify
+2019,Rajasthan Royals,14,5,8,1,-0.449,7,2100,83,152,148,Did not qualify
+2019,Royal Challengers Bangalore,14,5,8,1,-0.607,8,2150,82,155,148,Did not qualify
+2020,Mumbai Indians,14,9,5,0,1.107,1,2450,98,170,165,Winner
+2020,Delhi Capitals,14,8,6,0,-0.109,2,2300,93,162,158,Runner-up
+2020,Sunrisers Hyderabad,14,7,7,0,0.608,3,2200,94,158,152,Qualifier
+2020,Royal Challengers Bangalore,14,7,7,0,-0.172,4,2280,90,163,155,Qualifier
+2020,Kolkata Knight Riders,14,7,7,0,-0.214,5,2250,88,160,153,Did not qualify
+2020,Kings XI Punjab,14,6,8,0,-0.162,6,2220,86,158,152,Did not qualify
+2020,Chennai Super Kings,14,6,8,0,-0.455,7,2150,84,155,148,Did not qualify
+2020,Rajasthan Royals,14,6,8,0,-0.569,8,2180,83,157,150,Did not qualify
+2021,Delhi Capitals,14,10,4,0,0.481,1,2400,97,168,162,Qualifier
+2021,Chennai Super Kings,14,9,5,0,0.455,2,2380,95,167,160,Winner
+2021,Royal Challengers Bangalore,14,9,5,0,-0.140,3,2300,91,162,157,Qualifier
+2021,Kolkata Knight Riders,14,7,7,0,0.587,4,2280,93,163,155,Runner-up
+2021,Mumbai Indians,14,7,7,0,0.116,5,2250,89,160,155,Did not qualify
+2021,Punjab Kings,14,6,8,0,-0.001,6,2200,86,158,153,Did not qualify
+2021,Rajasthan Royals,14,5,9,0,-0.993,7,2050,82,150,145,Did not qualify
+2021,Sunrisers Hyderabad,14,3,11,0,-0.545,8,1950,78,145,140,Did not qualify
+2022,Gujarat Titans,14,10,4,0,0.316,1,2380,97,167,162,Winner
+2022,Rajasthan Royals,14,9,5,0,0.298,2,2350,95,165,160,Runner-up
+2022,Lucknow Super Giants,14,9,5,0,0.251,3,2320,93,163,158,Qualifier
+2022,Royal Challengers Bangalore,14,8,6,0,-0.253,4,2280,89,162,155,Qualifier
+2022,Delhi Capitals,14,7,7,0,0.204,5,2250,88,160,155,Did not qualify
+2022,Punjab Kings,14,7,7,0,0.126,6,2240,87,160,153,Did not qualify
+2022,Kolkata Knight Riders,14,6,8,0,0.146,7,2200,85,158,152,Did not qualify
+2022,Sunrisers Hyderabad,14,6,8,0,-0.379,8,2180,84,157,150,Did not qualify
+2022,Chennai Super Kings,14,4,10,0,-0.203,9,2100,80,152,148,Did not qualify
+2022,Mumbai Indians,14,4,10,0,-0.506,10,2050,78,150,145,Did not qualify
+2023,Gujarat Titans,14,10,4,0,0.809,1,2420,98,170,165,Runner-up
+2023,Chennai Super Kings,14,8,5,1,0.652,2,2380,95,168,162,Winner
+2023,Lucknow Super Giants,14,8,5,1,0.284,3,2320,92,163,158,Qualifier
+2023,Mumbai Indians,14,8,6,0,-0.044,4,2300,90,162,157,Qualifier
+2023,Rajasthan Royals,14,7,7,0,0.148,5,2260,88,160,155,Did not qualify
+2023,Royal Challengers Bangalore,14,7,7,0,0.135,6,2250,87,160,154,Did not qualify
+2023,Kolkata Knight Riders,14,6,8,0,-0.239,7,2200,85,157,152,Did not qualify
+2023,Punjab Kings,14,6,8,0,-0.304,8,2180,84,155,150,Did not qualify
+2023,Delhi Capitals,14,5,9,0,-0.808,9,2100,80,152,147,Did not qualify
+2023,Sunrisers Hyderabad,14,4,10,0,-0.590,10,2050,78,150,145,Did not qualify
+2024,Kolkata Knight Riders,14,9,3,2,1.428,1,2450,100,172,165,Winner
+2024,Sunrisers Hyderabad,14,8,5,1,0.414,2,2550,92,185,175,Runner-up
+2024,Rajasthan Royals,14,8,5,1,0.273,3,2380,95,168,160,Qualifier
+2024,Royal Challengers Bengaluru,14,7,7,0,0.459,4,2350,90,170,162,Qualifier
+2024,Chennai Super Kings,14,7,7,0,0.392,5,2320,88,167,160,Did not qualify
+2024,Delhi Capitals,14,7,7,0,-0.377,6,2250,86,162,155,Did not qualify
+2024,Lucknow Super Giants,14,7,7,0,-0.667,7,2200,84,158,152,Did not qualify
+2024,Gujarat Titans,14,5,7,2,-1.063,8,2080,82,152,148,Did not qualify
+2024,Punjab Kings,14,5,9,0,-0.353,9,2150,83,155,150,Did not qualify
+2024,Mumbai Indians,14,4,10,0,-0.318,10,2180,81,158,150,Did not qualify
+2025,Punjab Kings,14,9,4,1,0.372,1,2400,96,170,163,Runner-up
+2025,Royal Challengers Bengaluru,14,9,4,1,0.301,2,2380,95,168,162,Winner
+2025,Gujarat Titans,14,9,5,0,0.254,3,2350,93,165,160,Qualifier
+2025,Mumbai Indians,14,8,6,0,1.142,4,2420,97,172,165,Qualifier
+2025,Delhi Capitals,14,7,6,1,0.011,5,2250,88,160,155,Did not qualify
+2025,Sunrisers Hyderabad,14,6,7,1,-0.241,6,2200,86,158,152,Did not qualify
+2025,Lucknow Super Giants,14,6,8,0,-0.376,7,2180,84,155,150,Did not qualify
+2025,Kolkata Knight Riders,14,5,7,2,-0.305,8,2150,83,155,150,Did not qualify
+2025,Rajasthan Royals,14,4,10,0,-0.549,9,2050,80,150,145,Did not qualify
+2025,Chennai Super Kings,14,4,10,0,-0.647,10,2020,78,148,143,Did not qualify
