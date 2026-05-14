@@ -85,7 +85,7 @@ your reason here
 """ 
     response=llm.invoke(prompt)
     evaluation_text=response.content
-    is_sufficient="SUFFICIENT YES" in evaluation_text.upper()
+    is_sufficient="SUFFICIENT: YES" in evaluation_text.upper()
     return {
         "evaluation":evaluation_text,
         "is_sufficient":is_sufficient
