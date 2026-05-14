@@ -7,19 +7,12 @@ class CSVPlugin:
     )
     def analyze_csv(self, file_path: str) -> dict:
         df = pd.read_csv(file_path)
-
         rows, columns = df.shape
-
         column_names = list(df.columns)
-
         missing_values = df.isnull().sum().to_dict()
-
         data_types = df.dtypes.astype(str).to_dict()
-
         numeric_summary_df = df.describe().reset_index()
-
         sample_data_df = df.head(10)
-
         text_summary = f"""
 CSV Analysis Result:
 
