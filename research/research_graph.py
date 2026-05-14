@@ -65,3 +65,111 @@ Source:{url}
     return {
         "research_data":research_data
     }
+def evaluator_node(state:ResearchState):
+    topic=state[topic]
+    questions=state[questions]
+    research_data=state["research_data"]
+    prompt=f""" 
+You are a research quality evaluator.
+Topic:
+{topic}
+Research Questions:
+{questions}
+Collected Research data:
+{research_data}
+Evaluate whether the research data is enough to write a good beginer friendly report.
+Return your answer n this format:
+Sufficient:YES or NO
+Reason:
+your reason here
+""" 
+    response=llm.invoke(prompt)
+    evaluation_text=response.content
+    is_sufficient="SUFFICIENT YES" in evaluation__text.upper()
+    return {
+        "evaluation":evaluation_text,
+        "is_sufficient":is_sufficient
+    }
+def writer_node(state:ResearchState):
+    topic=state["topic"]
+    questions=state["questions"]
+    research_data=state["research_data"]
+    evaluation=state["evaluation"]
+    prompt=f""" 
+You are professional research report writer.
+Write a clear,begineer friendly research report.
+Topic:
+{topic}
+Research Questions:
+{questions}
+
+Research Data:
+{research_data}
+
+Evaluator Feedback:
+{evaluation}
+
+Report format:
+
+# Title
+
+## Introduction
+
+## Research Questions
+
+## Key Findings
+
+## Detailed Explanation
+
+## Benefits
+
+## Challenges
+
+## Real-World Examples
+
+## Conclusion
+## Sources
+# Rules:
+- Use simple English.
+- Make it easy for beginners.
+- Include source URLs in the Sources section.
+- Do not make unsupported claims.
+"""
+    response=llm.invoke(prompt)
+    return{
+        "final_report":response.content
+    }
+def route_after_evaluation(state:ResearchState):
+    if state["is_sufficient"]:
+        return "writer"
+    else:
+        return "writer"
+#workflow
+workflow=StateGraph(ResearchState)
+workflow.add_node("planner",planner_node)
+workflow.add_node("researcher",researcher_node)
+workflow.add_node("evaluator",evaluator_node)
+workflow.add_node("writer",writer_node)
+workflow.set_entry_point("planner")
+workflow.add_edge("planner","researcher")
+workflow.add_edge("researcher","evaluator")
+workflow.add_conditional_edges(
+    "evaluator",
+    route_after_evaluation,
+    {
+        "writer":"writer"
+    }
+)
+workflow.add_edge("writer",END)
+research_app=workflow.compile()
+def run_research_agent(topic:str):
+    initial_state={
+        "topic":topic,
+        "questions":[],
+        "research_data":[],
+        "evaluation":"",
+        "is_sufficient":False,
+        "final_report":""
+    }
+    result=research_app.invoke(initial_state)
+    return result 
