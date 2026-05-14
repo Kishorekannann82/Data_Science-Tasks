@@ -2,7 +2,7 @@ import os
 from typing import TypedDict,List
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from tavilly import TavillyClient
+from tavily import TavilyClient
 from langgraph.graph import StateGraph,END
 load_dotenv()
 llm=ChatGroq(
@@ -35,7 +35,7 @@ Rules:
 """
     response=llm.invoke(prompt)
     questions=[
-        q.strip
+        q.strip()
         for q in response.content.split("\n")
         if q.strip()
     ]
@@ -45,7 +45,7 @@ Rules:
 def researcher_node(state:ResearchState):
     questions=state["questions"]
     research_data=[]
-    for questions in questions:
+    for question in questions:
         search_result=tavily_client.search(
             query=question,
             search_depth="basic",
@@ -66,8 +66,8 @@ Source:{url}
         "research_data":research_data
     }
 def evaluator_node(state:ResearchState):
-    topic=state[topic]
-    questions=state[questions]
+    topic=state["topic"]
+    questions=state["questions"]
     research_data=state["research_data"]
     prompt=f""" 
 You are a research quality evaluator.
@@ -85,7 +85,7 @@ your reason here
 """ 
     response=llm.invoke(prompt)
     evaluation_text=response.content
-    is_sufficient="SUFFICIENT YES" in evaluation__text.upper()
+    is_sufficient="SUFFICIENT YES" in evaluation_text.upper()
     return {
         "evaluation":evaluation_text,
         "is_sufficient":is_sufficient

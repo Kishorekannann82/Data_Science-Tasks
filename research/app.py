@@ -1,7 +1,7 @@
 import streamlit as st
 from research_graph import run_research_agent
 st.set_page_config(
-    page_title:"Agentic Research Assistant",
+    page_title="Agentic Research Assistant",
     layout="centered"
 )
 st.title("AI research Agent")
@@ -27,4 +27,3 @@ if st.button("generate"):
         st.write(result["evaluation"])
         st.subheader("Final research report")
         st.markdown(result["final_report"])
-        
