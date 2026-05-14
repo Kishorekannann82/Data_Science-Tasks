@@ -13,7 +13,6 @@ parser = JsonOutputParser()
 prompt = ChatPromptTemplate.from_template(
     """
 You are a Pizza Order AI Assistant.
-
 Your task:
 - Understand the user's pizza order.
 - Extract the order details.

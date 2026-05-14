@@ -13,7 +13,7 @@ with st.sidebar:
     st.write("Writer Node")
 topic=st.text_input(
     "Enter your research topic:",
-    placeholder= "Enter the topic you wants to research with this Research Agent",
+    placeholder= "Enter the topic you wants to research with this Research Agent"
 )
 if st.button("generate"):
     if not topic.strip():

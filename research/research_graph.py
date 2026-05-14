@@ -19,9 +19,6 @@ class ResearchState(TypedDict):
     is_sufficient:bool
     final_report:str
 def planner_node(state:ResearchState):
-    """
-    This node takes the user topic and breaks it into research questions. 
-    """
     topic=state["topic"]
     prompt=f""" 
 You are a research planner.
@@ -102,31 +99,19 @@ Topic:
 {topic}
 Research Questions:
 {questions}
-
 Research Data:
 {research_data}
-
 Evaluator Feedback:
 {evaluation}
-
 Report format:
-
 # Title
-
 ## Introduction
-
 ## Research Questions
-
 ## Key Findings
-
 ## Detailed Explanation
-
 ## Benefits
-
 ## Challenges
-
 ## Real-World Examples
-
 ## Conclusion
 ## Sources
 # Rules:

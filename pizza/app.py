@@ -5,45 +5,30 @@ st.set_page_config(
     page_title="Pizza Order AI System",
     layout="centered"
 )
-
 st.title("Pizza Order AI System")
-
 st.write("Order pizza using natural language!")
-
 if "messages" not in st.session_state:
-
     st.session_state.messages = []
-
 if "orders" not in st.session_state:
-
     st.session_state.orders = []
-
 with st.sidebar:
-
     st.header("Pizza Menu")
-
     st.write("Chicken Pizza")
     st.write("Veggie Pizza")
     st.write("Paneer Pizza")
     st.write("Cheese Pizza")
     st.write("Chocolate Pizza")
-
     st.header("Sizes")
-
     st.write("Small")
     st.write("Medium")
     st.write("Large")
-
     if st.button("Clear Order"):
-
         st.session_state.messages = []
         st.session_state.orders = []
-
         st.rerun()
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
-
 user_input = st.chat_input(
     "Example: I want one large chicken pizza"
 )
@@ -61,11 +46,8 @@ if user_input:
         user_input,
         st.session_state.orders
     )
-
     intent = ai_response.get("intent")
-
     reply = ai_response.get("confirmation_message")
-
     if not reply:
 
         reply = "Added your pizza to the order."
